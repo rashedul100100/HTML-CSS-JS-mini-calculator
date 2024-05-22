@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstarp link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="calculator-body">
+        <div class="containe show text-center" id="hide">
+            <h1>Mini calculator</h1>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <input class="text-center" type="text" name="number" id="1stNum">
+                        </div>
+                        <div class="col s-btn2">
+                            <!-- <p id="aMatic"></p> -->
+                            <button class="text-center " id="aMatic">S</button>
+                        </div>
+                        <div class="col">
+                            <input class="text-center" type="text" name="number" id="2ndNum">
+                        </div>
+                    </div>
+                    <div class="row gap-4 mb-5">
+                        <div class="col s-btn">
+                            <!-- <button id="sBtn" onclick="btn()">+</button> -->
+                            <p id="sBtn" onclick="btn()">+</p>
+                        </div>
+                        <div class="col s-btn">
+                            <!-- <button id="mBtn" onclick="btn2()">-</button> -->
+                            <p id="sBtn" onclick="btn2()">-</p>
+                        </div>
+                        <div class="col s-btn">
+                            <!-- <button id="iBtn" onclick="btn3()">*</button> -->
+                            <p id="sBtn" onclick="btn3()">*</p>
+                        </div>
+                        <div class="col s-btn">
+                            <!-- <button id="dBtn" onclick="btn4()">/</button> -->
+                            <p id="sBtn" onclick="btn4()">/</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <button onclick="reset()" class="c-btn">Clear</button>
+                        </div>
+                        <div class="col">
+                            <button onclick="ans()" class="c-btn">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row popup containerr text-center" id="popupSh">
+            <div class="col">
+                <h2 class="mb-5 calculating">Your Calculating Result is...</h2>
+                <p id="showResult" class="mb-5"></p>
+                <button class="btn" id="close" onclick="closee()">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/min.js"></script>
+</body>
+</html>
